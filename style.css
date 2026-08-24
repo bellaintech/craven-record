@@ -5,6 +5,8 @@
   --banner-bg: #8b0000;
   --gray: #cccccc;
   --max-width: 700px;
+  --font-display: "Archivo Black", Impact, "Arial Black", sans-serif;
+  --font-body: "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 
 * {
@@ -16,7 +18,7 @@ body {
   padding: 0;
   background: var(--bg);
   color: var(--fg);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: var(--font-body);
   line-height: 1.4;
 }
 
@@ -29,7 +31,9 @@ body {
 .banner p {
   max-width: var(--max-width);
   margin: 0 auto;
-  font-weight: 700;
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: 0.01em;
   font-size: 0.85rem;
   color: var(--fg);
 }
@@ -63,8 +67,19 @@ main {
 }
 
 .caption-question {
-  font-weight: 700;
-  font-size: 0.85rem;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+}
+
+.lead-text {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 1.15rem;
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+  margin: 0 0 14px;
 }
 
 .highlight {
@@ -91,6 +106,7 @@ hr {
   object-position: top;
   height: auto;
   display: block;
+  border: 2px solid var(--accent);
 }
 
 .address-photo figcaption {
@@ -126,7 +142,7 @@ hr {
 
 .x-mark {
   color: var(--accent);
-  font-weight: 700;
+  font-family: var(--font-display);
 }
 
 /* Cookie consent banner */
