@@ -79,10 +79,6 @@ main {
   color: var(--accent);
 }
 
-a {
-  color: var(--accent);
-}
-
 hr {
   border: none;
   border-top: 1px solid #3a1418;
@@ -95,6 +91,24 @@ hr {
   line-height: 1.15;
   letter-spacing: 0.005em;
   margin: 0 0 16px;
+}
+
+.cta-button {
+  display: block;
+  text-align: center;
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 14px 18px;
+  border-radius: 4px;
+  margin: 0 0 16px;
+}
+
+.cta-button:hover {
+  background: #b91825;
 }
 
 .address-photo {
